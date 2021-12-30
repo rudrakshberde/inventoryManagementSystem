@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock In</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600">
+       <link rel="stylesheet" href="ss.css">
+   
+
+    <style>
+      html, body
+      {
+  background-image: url('frontpage.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+      .words {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #1c87c9;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #1c87c9;
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5; 
+      }
+      .fas {
+      margin: 25px 10px 0;
+      font-size: 72px;
+      color: #fff;
+      }
+      .fa-envelope {
+      transform: rotate(-20deg);
+      }
+      .fa-at , .fa-mail-bulk{
+      transform: rotate(10deg);
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }    
+      @media (min-width: 568px) {
+      
+      .left-part, form {
+      width: 50%;
+      }
+      .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+      }
+      .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+      }
+      .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+      }
+      }
+    </style>
+  </head>
+  <body > 
+    <div class="header">
+      <ul>
+        <li><a href="Stock In.html">Stock In</a></li>
+        <li><a href="Stock Out.html">Stock Out</a></li>
+        <li><a href="CustEnt.html">Customer Entry</a></li>
+       
+       
+      <li><a href="customerdet.html">update customer <br> information</a></li>
+      <li><a href="index.html">Home</a></li>
+      </ul>
+      </div>
+    <div class="main-block" align="center">
+      <div class="left-part">
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-at"></i>
+        <i class="fas fa-mail-bulk"></i>
+      </div>
+      <form action="prodinsert.php" method="post">
+        <h1 class="words">Stock In</h1>
+        <div class="info">
+          <input class="fname" type="text" name="prodname" placeholder="Enter Article Name">
+          <input type="text" name="batchno" placeholder="article batch no">
+          <input type="number" name="price" placeholder="Price">
+         <p class="words"> 
+           manufacturing date:<input type="date" name="mfgdate" placeholder="Price">
+          Expiry date(if applicable):<input type="date" name="expdate" placeholder="Price">
+        </p>
+        </div>
+                <div>
+          
+        </div>
+        <button type="submit">ADD</button>
+      </form>
+    </div>
+
+  </body>
+
+
+
+</html>
